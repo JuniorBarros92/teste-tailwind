@@ -10,9 +10,18 @@
   body {
     color: #fff;
     background-color: #000;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Inter", sans-serif;
   }
   html{
     scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+background: linear-gradient(92deg,rgba(14, 50, 97, 1) 0%, rgba(104, 58, 145, 1) 47%, rgba(212, 103, 25, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }
