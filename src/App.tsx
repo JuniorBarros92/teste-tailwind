@@ -1,4 +1,5 @@
 import { Hero } from "./components/Hero"
+import { Highlight } from "./components/Highlight"
 import { Intro } from "./components/Intro"
 import { NavBar } from "./components/NavBar"
 
@@ -11,6 +12,7 @@ function App() {
       <NavBar />
       <Hero />
       <Intro />
+      <Highlight />
     </div>
   )
 }
