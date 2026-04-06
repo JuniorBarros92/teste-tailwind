@@ -17,7 +17,7 @@ interface ModelType {
 
 export function Colors() {
     const colors: ColorType[] = [
-        { id: 'blue', name: 'Titânio Azul', image: '/img/azul-removebg-preview.png', colorClass: 'bg-[#2B3544]' },
+        { id: 'blue', name: 'Titânio Azul', image: '/img/iPhone 17 Pro Specs and review-Photoroom.png', colorClass: 'bg-[#2B3544]' },
         { id: 'silver', name: 'Titânio Natural', image: '/img/branco-removebg-preview.png', colorClass: 'bg-[#E3E2DF]' },
         { id: 'orange', name: 'Titânio Laranja', image: '/img/laranja-removebg-preview.png', colorClass: 'bg-[#C17C5B]' }
     ];
@@ -86,6 +86,26 @@ export function Colors() {
                     ))} 
                 </div>
             </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
+            {models.map((model, index) => (
+                <div key={index} className="bg-linear-to-br from-gray-900 to-trasparent rounded-3xl p-8 border border-gray-700/50  shadow-lg ">
+                    <div className="text-4xl mb-4">📲</div>
+                    <h3 className="text-2xl font-bold mb-3">{model.name}</h3>
+                    <p className="text-gray-400 mb-4">{model.screen}</p>
+                    <ul className="space-y-2 text-gray-300">
+                        <li>{model.storage}</li>
+                        <li>{model.battery}</li>
+                        <li>{model.weight}</li>
+                    </ul>
+                </div>
+            ))}
+        </div>
+        <div className="text-center mt-16">
+            <button className="bg-blue-700 hover:bg-blue-800 text-white text-lg font-medium py-4 px-12 rounded-full transition-all duration-300 cursor-pointer shadow-lg shadow-blue-500/20 hover:scale-105">
+                Compre Agora Apartir de R$ 9.999,00
+            </button>
+            <p className="text-gray-400 mt-6">Ou em até 12 x de R$ 833,25 sem juros</p>
+        </div>
         </section>
     );
 }
