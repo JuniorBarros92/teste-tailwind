@@ -1,3 +1,24 @@
+
+
+const specs = [
+    {
+      value: "6.3",
+      label: "Display Super Retina XDR",
+      color: "text-blue-600"
+    },
+    {
+      value: "12 MP",
+      label: "Ultra wide    ",
+      color: "text-orange-500"
+    },
+    {
+      value: "12 MP",
+      label: "Tele Foto",
+      color: "text-blue-600"
+    },
+  
+  ];
+
 export function Highlight() {
     return (
         <section className="bg-black py-20 px-6" id="design">
@@ -31,7 +52,27 @@ export function Highlight() {
                         <li>Bateria mais durável com carregamento rápido</li>
                     </ul>
                 </div>
+                   
             </div>
+<div className="text-center mt-10" id="camera">
+    <h3 className="text-4xl font-bold mb-10">Sitema avançado</h3>
+    
+    
+    
+
+            <div className="max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3  gap-6">
+          {specs.map((item, index) => (
+            <div key={index} className="text-center bg-gray-900 rounded-2xl hover:bg-gray-800 transition-all hover:scale-105 cursor-pointer duration-300 shadow-lg p-6">
+              <p className={`text-3xl font-bold ${item.color}`}>{item.value}</p>
+              <p className="text-gray-400 mt-2">{item.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+      </div>
+
+
         </section>
     );
 }
