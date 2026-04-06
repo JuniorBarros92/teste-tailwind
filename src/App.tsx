@@ -4,6 +4,7 @@ import { Highlight } from "./components/Highlight"
 import { Intro } from "./components/Intro"
 import { NavBar } from "./components/NavBar"
 import { Colors } from "./components/Colors"
+import { Footer } from "./components/Footer"
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -24,7 +25,8 @@ function App() {
       <Hero />
       <Intro />
       <Highlight />
-      <Colors />  
+      <Colors /> 
+      <Footer /> 
     </div>
   )
 }
