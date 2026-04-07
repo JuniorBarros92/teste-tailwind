@@ -17,9 +17,9 @@ interface ModelType {
 
 export function Colors() {
     const colors: ColorType[] = [
-        { id: 'blue', name: 'Titânio Azul', image: '/img/iPhone 17 Pro Specs and review-Photoroom.png', colorClass: 'bg-[#2B3544]' },
-        { id: 'silver', name: 'Titânio Natural', image: '/img/branco-removebg-preview.png', colorClass: 'bg-[#E3E2DF]' },
-        { id: 'orange', name: 'Titânio Laranja', image: '/img/laranja-removebg-preview.png', colorClass: 'bg-[#C17C5B]' }
+        { id: 'blue', name: 'Titânio Azul', image: '/img/azul-removebg-preview.png', colorClass: 'bg-[#1E65D0]' },
+        { id: 'silver', name: 'Titânio Natural', image: '/img/branco-removebg-preview.png', colorClass: 'bg-[#F4F4F5]' },
+        { id: 'orange', name: 'Titânio Laranja', image: '/img/laranja-removebg-preview.png', colorClass: 'bg-[#F56A2D]' }
     ];
 
     const models: ModelType[] = [

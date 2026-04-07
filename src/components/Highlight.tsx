@@ -30,7 +30,7 @@ export function Highlight() {
           <div className="bg-zinc-100 dark:bg-zinc-900/60 rounded-[40px] p-10 flex flex-col justify-between overflow-hidden relative group border border-zinc-200 dark:border-white/10">
             <div className="w-full flex justify-center mb-8 relative z-10 transition-transform duration-500 group-hover:scale-105">
               <img 
-                src="/img/download (1).jpg" 
+                src="/img/002.png" 
                 alt="IOS 19" 
                 className="w-full h-[350px] sm:h-[450px] object-contain dark:mix-blend-lighten drop-shadow-2xl" 
               />
@@ -41,18 +41,18 @@ export function Highlight() {
             </div>
           </div>
           
-          {/* Card 2 - Immersive Image background approach for visual variety */}
-          <div className="bg-zinc-900 rounded-[40px] p-10 flex flex-col justify-start relative overflow-hidden group border border-zinc-200 dark:border-white/10">
-            <div className="relative z-10 text-center">
-              <h3 className="font-bold mb-3 text-3xl text-white">Design em Titânio</h3>
-              <p className="text-zinc-300 text-lg leading-relaxed font-medium max-w-sm mx-auto">Leve, resistente, elegante. O grau aeroespacial redefine o impossível.</p>
-            </div>
-            <div className="w-full flex justify-center mt-12 absolute bottom-0 left-0 right-0 transition-transform duration-500 group-hover:translate-y-[-10px]">
+          {/* Card 2 - Standard Image Top, Text Bottom layout */}
+          <div className="bg-zinc-100 dark:bg-zinc-900/60 rounded-[40px] p-10 flex flex-col justify-between overflow-hidden relative group border border-zinc-200 dark:border-white/10">
+            <div className="w-full flex justify-center mb-8 relative z-10 transition-transform duration-500 group-hover:scale-105">
               <img 
-                src="/img/iPhone 17 Pro Max Concept – A Bold New Era of Apple Design.jpg" 
+                src="/img/003.png" 
                 alt="Design em Titânio" 
-                className="w-full h-[400px] object-cover mix-blend-lighten opacity-80" 
+                className="w-full h-[350px] sm:h-[450px] object-contain dark:mix-blend-lighten drop-shadow-2xl" 
               />
+            </div>
+            <div className="relative z-10">
+              <h3 className="font-bold mb-3 text-3xl text-zinc-900 dark:text-white">Design em Titânio</h3>
+              <p className="text-zinc-600 dark:text-zinc-300 text-lg leading-relaxed font-medium">Leve, resistente, elegante. O grau aeroespacial redefine o impossível.</p>
             </div>
           </div>
         </div>
